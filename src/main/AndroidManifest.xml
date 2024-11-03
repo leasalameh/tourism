@@ -12,17 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tourism"
         tools:targetApi="31">
+
+        <!-- Set HomePage as the Launcher Activity -->
+        <activity
+            android:name="com.example.tourism.ui.HomePage"
+            android:exported="true"
+            android:label="tourism"
+            android:theme="@style/Theme.Tourism.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Keep MainActivity but without intent filter -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Tourism.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.Tourism.NoActionBar" />
     </application>
 
 </manifest>
