@@ -1,6 +1,6 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("com.android.application") version "8.1.0" apply true
+    id("org.jetbrains.kotlin.android") version "1.9.0" apply true
 }
 
 android {
@@ -48,4 +48,9 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.6.1")
+    implementation ("com.mikepenz:iconics-core:5.3.2")
+    implementation ("com.mikepenz:fontawesome-typeface:5.9.0.0-kotlin@aar")
+    implementation ("androidx.constraintlayout:constraintlayout:2.0.4")
+
+
 }
